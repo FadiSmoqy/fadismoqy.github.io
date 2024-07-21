@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+button {
+  margin: 15px 0;
+}
+h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+.header-section {
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+li {
+  display: inline-block;
+  font-size: 16px;
+}
+.menu_item {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.humberger {
+  display: none;
+}
+.fa-times-circle {
+  color: black;
+  display: none;
+}
+/* main-header */
+
+.main-header {
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+button {
+  padding: 10px 30px;
+  color: black;
+}
+
+.clicked_navbar {
+  background-color: blue;
+  display: block;
+}
+
+/* main-section */
+.main-section {
+  color: black;
+  padding: 70px 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.box {
+  background-color: darkslategrey;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* media query header-section */
+
+/* max-width is for desktop to phone */
+
+/* media query 1000px */
+@media screen and (max-width: 1000px) {
+  .wrap {
+    width: 90%;
+  }
+}
+
+/* media query 800px */
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* media query 500px */
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* media query 600px */
+
+@media screen and (max-width: 600px) {
+  .nav {
+    position: relative;
+  }
+  .fa-times-circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+  .navbar_menu {
+    position: fixed;
+    top: 0;
+    right: -290px;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 150px 80px;
+    display: block;
+    transition: 1s all ease;
+  }
+  li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .menu_item {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .humberger {
+    display: block;
+    font-size: 25px;
+  }
+  .main-header {
+    justify-content: center;
+  }
+  .main-header-box {
+    text-align: center;
+  }
+}
